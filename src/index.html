@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Week 3 | Typography</title>
+  <meta name="description"
+    content="This lesson we will focus on our text content, we will look at different ways that we can make our tex more engaging">
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Step 1:  Add our CSS file  -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css//typograhy.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  
+  <!-- Step 2: Download punk typewriter font from https://www.wfonts.com/font/punk-typewriter#google_vignette 
+  and upload the otf file to the fonts folder -->
+
+
+  <!--Step 3: Add Google fonts for Montserrate Alternates, Raleway for mutliple font-weights. 
+    Before linking fonts preconnect to the googleapis and gstatic servers. For step 4, go to style.css -->
+  <!--
+
+    https://developers.google.com/fonts/docs/css2
+    
+  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;700;800&family=Raleway:wght@200;300;700;800">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+          <div class="nav-logo"> <img src="./img/logo.jpeg" alt="logo" /></div>
+          <ul class="nav-items">
+            <li><a href="#contrast">Contrast</a></li>
+            <li><a href="#letterspacing">Letter Spacing</a></li>
+            <li><a href="#lineheight">Letter Height</a></li>
+            <li><a href="main.html">Main</a></li>
+          </ul>
+          <div class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </header>
+      <!-- --------------------------------------------------- -->
+      <div class="typography-style">
+        <h1>Hello Typography!</h1>
+        <p>This is an example of custom typography style.</p>
+        <section id="contrast">
+            <div>
+              <h3>No Contrast</h3>
+            </div>
+            <div>
+              <span class="mask">
+                <h3>With Contrast With An Image And Mask</h3>
+              </span>
+            </div>
+            <div>
+              <h3>Contrast with Solid Colours</h3>
+            </div>
+            <div>
+              <h3>Contrast with Solid Colours and Text Shadows</h3>
+            </div>
+          </section>          
+      </div>      
+      <!-- --------------------------------------------------- -->
+      
+      <!-- --------------------------------------------------- -->
+      
+      <!-- --------------------------------------------------- -->
+      <section id="letterspacing">
+        <h3>Letter Spacing and Titles</h3>
+        <!--  body text with letter spacing    -->
+        <div class="letterspacing-container">
+          <div class="with-spacing">
+            <h4>With Letter Spacing</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad asperiores assumenda autem beatae
+              corporis culpa cum, cumque cupiditate debitis deleniti distinctio esse explicabo fugiat fugit hic iusto
+              labore libero maxime minus nam non obcaecati omnis perspiciatis porro quas qui quis recusandae
+              reprehenderit, similique tenetur unde voluptas voluptates. Accusantium aliquid aspernatur aut deserunt
+              dolorum eveniet expedita, fugit ipsa ipsum labore libero, obcaecati officia optio perferendis, quibusdam
+              quidem repellat sint. Asperiores consectetur corporis ducimus eaque ratione.</p>
+          </div>
+          <div class="with-kerning">
+            <h4>With Kerning AV</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad asperiores assumenda autem beatae
+              corporis culpa cum, cumque cupiditate debitis deleniti distinctio esse explicabo fugiat fugit hic iusto
+              labore libero maxime minus nam non obcaecati omnis perspiciatis porro quas qui quis recusandae
+              reprehenderit, similique tenetur unde voluptas voluptates. Accusantium aliquid aspernatur aut deserunt
+              dolorum eveniet expedita, fugit ipsa ipsum labore libero, obcaecati officia optio perferendis, quibusdam
+              quidem repellat sint. Asperiores consectetur corporis ducimus eaque ratione.</p>
+          </div>
+        </div>
+      </section>
+      <!-- --------------------------------------------------- -->
+      <section id="lineheight">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquid aperiam deleniti eum facilis itaque
+          laudantium minima minus mollitia nam obcaecati optio perspiciatis placeat porro provident quaerat quas, qui
+          quidem reiciendis rerum tempore unde velit. Accusamus aliquam consequuntur deleniti dolores eius, fuga hic
+          labore magni omnis sapiente tempore veniam. Architecto dicta et ex omnis qui repellendus similique soluta ut.
+          Commodi dolores ex laboriosam molestiae neque nobis numquam qui sequi ut voluptas. Quo, quod, unde. Accusamus
+          alias, aliquam at beatae commodi culpa dignissimos dolorem earum facilis fugiat iste modi nemo nihil officia
+          optio perspiciatis quae quia sequi tempore voluptatibus. Aperiam consequatur delectus eos illum in ipsam, itaque
+          nulla odit ullam! Facilis, quam, velit? Accusamus accusantium aliquid aut deleniti distinctio eaque et ex fuga
+          illo, inventore ipsa iusto laudantium molestiae nam natus, necessitatibus nemo neque nihil nulla obcaecati
+          officia officiis optio pariatur praesentium quam, quisquam repellat reprehenderit sequi tempore veniam
+          voluptatibus.</p>
+      </section>
+      <script src="./js/index.js"></script>
+</body>
+</html>

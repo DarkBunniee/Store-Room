@@ -1,0 +1,174 @@
+/* some basic styling to make our page look a little nicer */
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin:0px;
+  background-color: black;
+}
+header{
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  height: 125px;
+  padding: 0px 25px;
+}
+header div{
+  height: 115px;
+  width: auto;
+  flex-grow: 1;
+}
+header img{
+  height: 100%;
+  width: auto;
+}
+menu{
+  display: flex;
+  margin-bottom: 0px;
+  list-style: none;
+}
+menu li{
+  border-right: solid 2px #0e0e0e;
+  padding: 0px 10px;
+}
+menu li:last-of-type{
+  border: none;
+}
+.title-row{
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Step 5: Add the Montserrat Alternates font in any font-weight that you think looks appropriate*/
+h1,h2,h3,h4,h5,h6{
+ font-family:'Montserrat Alternates',sans-serif;
+  font-weight:700;
+  color:White;
+}
+
+h3{
+  font-size: 32px;
+}
+
+/* Step 6: Add the Raleway font*/
+p,a,li{
+ font-family: Raleway, serif;
+   color:White;
+}
+
+menu li a:link{
+  text-decoration: none;
+  color: #0e0e0e;
+}
+menu li a:hover{
+  color: #7a2518;
+}
+menu li a:active{
+  text-decoration: underline;
+}
+/*Step 4: Add our custom font (not the google font) using the font-face tag*/
+@font-face{
+  font-family: week3font;
+  src:url('../font/Punk Typewriter.otf');
+}
+
+
+.title-row h1{
+  font-family: week3font;
+  font-size: 92px;
+  color: white;
+}
+
+/* Step 7: Just observe the poor contrast in this combination */
+#contrast div:nth-child(1){
+  background-image: url("../img/waves.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Step 8: This image contrast is poor as well, but we can make it better by adding a partially opaque layer
+using the span embedded within. It need not necessarily be a span, it can be a div instead as well. 
+*/
+#contrast div:nth-child(2){
+  background-image: url("../img/tree-and-water.jpg");
+  background-size: cover;
+  background-position: center;
+ 
+  height: 400px;
+}
+#contrast div:nth-child(2) span{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  rgba(255, 255, 255, 0.3);
+}
+/* Step 9: Choose an appropriate font-color for better contrast
+*/
+#contrast div:nth-child(3){
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E1341E;
+  color:white;
+}
+/* Step 9: Add text shadow to see if it helps with contrast and readability
+*/
+#contrast div:nth-child(4){
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1ECBE1;
+  color: black;
+  text-shadow: 4px 3px 4px rgba(0,0,0,0.5);
+}
+
+#letterspacing{
+  padding: 2%;
+}
+#letterspacing h3{
+  text-align: center;
+}
+.letterspacing-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.letterspacing-container div{
+  padding: 15px;
+}
+.letterspacing-container h4{
+  font-size: 22px;
+}
+
+/*Step 10: Play with letter spacing and font kerning to see how it afects readability*/
+.letterspacing-container .with-spacing h4{
+  letter-spacing: 1.5px;
+}
+.letterspacing-container .with-spacing p{
+  letter-spacing: 1.75px;
+}
+.letterspacing-container .with-kerning h4{
+  font-kerning: normal;
+}
+.letterspacing-container .with-kerning p{
+  font-kerning:none;
+}
+
+#lineheight{
+  padding: 2%;
+}
+
+/*Step 11: Find what would the most appropriate line height  here*/
+#lineheight p{
+  line-height: 1.5;
+}
+
+
+

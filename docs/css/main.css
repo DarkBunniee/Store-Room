@@ -1,0 +1,234 @@
+/* Add some general styling */
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0px;
+  background-color: #f9f9f9;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Poppins', sans-serif;
+}
+p,a,li{
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+/* style our header */
+header{
+  display: flex;
+  align-items: center;
+  height: 125px;
+  background-color: #f9f9f9;
+}
+header div{
+  width: auto;
+  height: 115px;
+  flex-grow: 1;
+}
+header div a img{
+  width: auto;
+  height: 100%;
+}
+header nav menu{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0px;
+}
+header nav menu li{
+  padding: 0px 10px;
+}
+header nav menu li a:link{
+  text-decoration: none;
+  color: #0e0e0e;
+}
+header nav menu li a:hover{
+  color: #0cb19d;
+}
+/* Monochrome */
+#mono-scheme{
+  width: auto;
+  min-height: 100vh;
+}
+.mono-header{
+  background-image: url("../img/mono-header.jpg");
+  background-size: cover;
+}
+.mono-header div:nth-child(1){
+  /*
+  Step 1.1: Set a background color with opacity if needed 
+  as shown in the example
+
+  background-color: rgba(0,0,0,.9);
+
+  You can use Canva's color wheel : 
+  
+  https://www.canva.com/colors/color-wheel/
+  
+  to generate color combinations !
+  
+  */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0px;
+}
+.mono-header h4{
+  /*
+ Step 1.2: Set a text color that obeys the monochromatic color scheme.
+ You can simply use black and white or you can get creative with this
+  */
+  
+  font-size: 52px;
+  margin-bottom: 70px;
+  letter-spacing: .25em;
+}
+.mono-header a{
+  /*
+  Step 1.3: Set the background color, text-color and 
+  border-color here to match with previously chosen colors. Mix and match the same colors. Don't use any new colors
+  */ 
+  margin: 0px 10px;
+  border: solid 4px #f9f9f9;
+  background-color: #0e0e0e;
+  color: #f9f9f9;
+  padding: 15px 35px;
+  text-decoration: none;
+}
+.mono-btn{
+  flex-direction: row;
+}
+.mono-header a:hover{
+  border-color: #0e0e0e;
+}
+.mono-body{
+  background-color: #f9f9f9;
+  padding: 5%;
+  text-align: center;
+}
+.mono-body h5{
+  font-size: 28px;
+}
+.mono-body-row{
+  display: grid;
+  grid-template-columns: repeat(3,33.3%);
+  justify-content: center;
+  padding: 5%;
+}
+.mono-body-row div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mono-body-row div i{
+  font-size: 72px;
+}
+.mono-body-row div a{
+  text-decoration: none;
+  background-color: #f9f9f9;
+  color: #0e0e0e;
+  border: solid 4px #0e0e0e;
+  padding: 20px 40px;
+}
+.mono-body-row div h6{
+  font-size: 26px;
+}
+/* triadic */
+.tri-header{
+  /*Step 2.1 : Set background color for the triadic header*/
+  width: 100%;
+  height: 100vh;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tri-header h4{
+  /*Step 2.2 : Set text color that obeys with the triadic color paletter*/
+  
+  font-size: 82px;
+  margin: 0px;
+}
+.tri-header h4 span{
+  /*Step 2.3 : Set text color that obeys with the triadic color paletter*/
+ 
+  font-size: 98px;
+}
+.tri-body{
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  text-align: center;
+}
+.tri-body div{
+  min-height: 350px;
+  color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.tri-body div i{
+  font-size: 98px;
+}
+.tri-body div h5{
+  font-size: 42px;
+  margin: 15px;
+}
+
+
+.tri-body div:nth-child(1){
+  /*
+Step 3.1: Choose a background color for triadic body. Change text-color as necessary.
+*/
+  color:black;
+}
+.tri-body div:nth-child(1) a{
+  /*
+  Step 3.2 : Set text color to be the same as background color from Step 3.1. Change background color if necessary
+  */
+  
+  padding: 25px 50px;
+  border: solid 4px #f4f4f4;
+  text-decoration: none;
+}
+
+.tri-body div:nth-child(2){
+  /*
+Step 3.3: Choose a background color for triadic body that obeys the triadic color scheme of the previous chosen color in 3.1. Change text-color as necessary.
+*/
+color:black;
+}
+
+.tri-body div:nth-child(2) a{
+  /*
+  Step 3.4 : Set text color to be the same as background color from Step 3.3. Change background color if necessary
+  */
+  
+  padding: 25px 50px;
+  border: solid 4px #f4f4f4;
+  text-decoration: none;
+}
+
+
+
+.tri-body div:nth-child(3){
+  /*
+Step 3.5: Choose a background color for triadic body that obeys the triadic color scheme of the previous chosen color in 3.1 and 3.3. Change text-color as necessary.
+*/
+color:black;
+
+}
+.tri-body div:nth-child(3) a{
+  /*
+  Step 3.6 : Set text color to be the same as background color from Step 3.5. Change background color if necessary
+  */
+  
+  padding: 25px 50px;
+  border: solid 4px #f4f4f4;
+  text-decoration: none;
+}

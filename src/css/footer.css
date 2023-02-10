@@ -1,0 +1,44 @@
+
+#letterspacing{
+    padding: 2%;
+  }
+  #letterspacing h3{
+    text-align: center;
+  }
+  .letterspacing-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .letterspacing-container div{
+    padding: 15px;
+  }
+  .letterspacing-container h4{
+    font-size: 22px;
+  }
+  
+  /*Step 10: Play with letter spacing and font kerning to see how it afects readability*/
+  .letterspacing-container .with-spacing h4{
+    letter-spacing: 1.5px;
+  }
+  .letterspacing-container .with-spacing p{
+    letter-spacing: 1.75px;
+  }
+  .letterspacing-container .with-kerning h4{
+    font-kerning: normal;
+  }
+  .letterspacing-container .with-kerning p{
+    font-kerning:none;
+  }
+  
+  #lineheight{
+    padding: 2%;
+  }
+  
+  /*Step 11: Find what would the most appropriate line height  here*/
+  #lineheight p{
+    line-height: 1.5;
+  }
+  
+  
+  
+  

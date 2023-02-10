@@ -1,0 +1,11 @@
+{
+  "name": "gurpinder-singh",
+  "version": "1.0.0",
+  "description": "This is general practise repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gurpinder Singh",
+  "license": "ISC"
+}
